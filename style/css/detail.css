@@ -1,0 +1,66 @@
+/* style/detail.css */
+.book-detail {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.book-card {
+    /* พาสเทลอ่อน */
+    background: linear-gradient(135deg, #fff5f8 0%, #f0f4ff 100%);
+    padding: 45px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.2);
+    border: 2px solid rgba(251, 194, 235, 0.3);
+}
+
+.book-card h2 {
+    color: #ff9a9e;
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #fbc2eb;
+}
+
+.book-info {
+    margin: 30px 0;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255, 182, 193, 0.1);
+}
+
+.info-label {
+    font-weight: 700;
+    color: #a6c1ee;
+    min-width: 120px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.info-value {
+    color: #555;
+    font-size: 1.1em;
+}
+
+.book-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+/* Book icon decoration */
+.book-icon {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 5em;
+    filter: drop-shadow(0 4px 8px rgba(255, 182, 193, 0.3));
+}

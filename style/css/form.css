@@ -1,0 +1,75 @@
+/* style/form.css */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    /* พื้นหลังพาสเทลอ่อน */
+    background: linear-gradient(135deg, #fff5f8 0%, #f8f9ff 100%);
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(255, 182, 193, 0.15);
+    border: 2px solid rgba(251, 194, 235, 0.2);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ff9a9e;
+    font-weight: 600;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #fde2e4;
+    border-radius: 12px;
+    font-size: 1em;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #fbc2eb;
+    box-shadow: 0 0 0 4px rgba(251, 194, 235, 0.15);
+    background-color: #fffbfc;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffc3cd;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+/* Error state */
+input.error,
+textarea.error {
+    border-color: #ffb3ba;
+}
+
+.error-message {
+    color: #ffb3ba;
+    font-size: 0.85em;
+    margin-top: 5px;
+}

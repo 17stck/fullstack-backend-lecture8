@@ -1,0 +1,37 @@
+<!-- book.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 <%= book.title %></title>
+    <link rel="stylesheet" href="/style/css/main.css">
+    <link rel="stylesheet" href="/style/css/buttons.css">
+    <link rel="stylesheet" href="/style/css/detail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="book-detail">
+            <div class="book-card">
+                <div class="book-icon">📖</div>
+                <h2><%= book.title %></h2>
+                <div class="book-info">
+                    <div class="info-row">
+                        <span class="info-label">✍️ Author:</span>
+                        <span class="info-value"><%= book.author %></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">🆔 Book ID:</span>
+                        <span class="info-value">#<%= book.id %></span>
+                    </div>
+                </div>
+                <div class="book-actions">
+                    <a href="/update/<%= book.id %>" class="btn btn-edit">✏️ Edit Book</a>
+                    <a href="/delete/<%= book.id %>" class="btn btn-delete" onclick="return confirm('Are you sure you want to delete this book?')">🗑️ Delete Book</a>
+                    <a href="/" class="btn btn-back">⬅️ Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

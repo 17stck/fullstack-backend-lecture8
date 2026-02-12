@@ -1,0 +1,150 @@
+/* style/table.css */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(255, 182, 193, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+thead {
+    /* พาสเทลม่วง-ชมพู */
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    color: white;
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 1.5px;
+}
+
+/* Title - ชิดซ้าย */
+th:nth-child(1) {
+    text-align: left;
+    width: 35%;
+    padding-left: 30px;
+}
+
+/* Author - กึ่งกลาง */
+th:nth-child(2) {
+    text-align: center;
+    width: 25%;
+}
+
+/* Actions - ชิดขวา */
+th:nth-child(3) {
+    text-align: right;
+    width: 40%;
+    padding-right: 30px;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(251, 194, 235, 0.2);
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+tbody tr:hover {
+    background: linear-gradient(90deg, #fff5f8 0%, #fff 100%);
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(255, 182, 193, 0.15);
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 20px 15px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Title - ชิดซ้าย + เข้ม */
+td:nth-child(1) {
+    text-align: left;
+    font-weight: 600;
+    padding-left: 30px;
+    color: #ff9a9e;
+}
+
+/* Author - กึ่งกลาง */
+td:nth-child(2) {
+    text-align: center;
+    color: #666;
+}
+
+/* Actions - ชิดขวา */
+td:nth-child(3) {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.actions {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    th:nth-child(1), td:nth-child(1) {
+        width: 30%;
+        padding-left: 20px;
+    }
+    
+    th:nth-child(2), td:nth-child(2) {
+        width: 25%;
+    }
+    
+    th:nth-child(3), td:nth-child(3) {
+        width: 45%;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9em;
+        table-layout: auto;
+    }
+    
+    th, td {
+        padding: 12px 10px;
+    }
+    
+    th:nth-child(1), td:nth-child(1) {
+        padding-left: 15px;
+    }
+    
+    th:nth-child(3), td:nth-child(3) {
+        padding-right: 15px;
+    }
+    
+    .actions {
+        flex-direction: column;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .actions {
+        width: 100%;
+    }
+    
+    .actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,99 @@
+/* style/buttons.css */
+.create-btn-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-create {
+    /* โทนพาสเทลชมพู-ม่วง */
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    color: white;
+    padding: 14px 35px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(251, 194, 235, 0.4);
+    font-size: 1em;
+}
+
+.btn-create:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(251, 194, 235, 0.6);
+    background: linear-gradient(135deg, #fda7df 0%, #9ab3f5 100%);
+}
+
+.btn-view {
+    /* เขียวพาสเทล */
+    background: linear-gradient(135deg, #a8e6cf 0%, #89d8c3 100%);
+    color: white;
+}
+
+.btn-view:hover {
+    background: linear-gradient(135deg, #8dddb8 0%, #6fc9b4 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(168, 230, 207, 0.4);
+}
+
+.btn-edit {
+    /* ฟ้าพาสเทล */
+    background: linear-gradient(135deg, #a8d8ea 0%, #84c5e0 100%);
+    color: white;
+}
+
+.btn-edit:hover {
+    background: linear-gradient(135deg, #8dc9e3 0%, #6bb5d9 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(168, 216, 234, 0.4);
+}
+
+.btn-delete {
+    /* แดงพาสเทล */
+    background: linear-gradient(135deg, #ffb3ba 0%, #ffa4ab 100%);
+    color: white;
+}
+
+.btn-delete:hover {
+    background: linear-gradient(135deg, #ff9da5 0%, #ff8891 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 179, 186, 0.4);
+}
+
+.btn-back {
+    /* เทาพาสเทล */
+    background: linear-gradient(135deg, #d4d4d4 0%, #c1c1c1 100%);
+    color: white;
+    padding: 12px 30px;
+}
+
+.btn-back:hover {
+    background: linear-gradient(135deg, #bebebe 0%, #ababab 100%);
+    transform: translateX(-5px);
+    box-shadow: 0 4px 15px rgba(212, 212, 212, 0.4);
+}
+
+.btn-submit {
+    /* ม่วงพาสเทล */
+    background: linear-gradient(135deg, #e0c3fc 0%, #c9a8f5 100%);
+    color: white;
+    padding: 12px 40px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(224, 195, 252, 0.5);
+    background: linear-gradient(135deg, #d4b0fa 0%, #b894ed 100%);
+}

@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "axios": "^1.13.5",
+    "body-parser": "^2.2.2",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  },
+  "name": "fullstack-backend-lecture8",
+  "version": "1.0.0",
+  "description": "fullstack-backend-lecture8",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/17stck/fullstack-backend-lecture8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/17stck/fullstack-backend-lecture8/issues"
+  },
+  "homepage": "https://github.com/17stck/fullstack-backend-lecture8#readme"
+}

@@ -1,0 +1,34 @@
+<!-- update.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✏️ Update Book</title>
+    <link rel="stylesheet" href="/style/css/main.css">
+    <link rel="stylesheet" href="/style/css/buttons.css">
+    <link rel="stylesheet" href="/style/css/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✏️ Update Book</h1>
+        <div class="form-container">
+            <form method="post" action="/update/<%= book.id %>">
+                <div class="form-group">
+                    <label for="title">📖 Book Title:</label>
+                    <input type="text" id="title" name="title" value="<%= book.title %>" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">✍️ Author Name:</label>
+                    <input type="text" id="author" name="author" value="<%= book.author %>" required>
+                </div>
+                <div class="form-actions">
+                    <a href="/book/<%= book.id %>" class="btn btn-back">Cancel</a>
+                    <a href="/delete/<%= book.id %>" class="btn btn-delete" onclick="return confirm('Are you sure you want to delete this book?')">🗑️ Delete</a>
+                    <button type="submit" class="btn btn-submit">Update Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
